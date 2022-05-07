@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/ed25c78231.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frank Souza</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="logo_div">
+      <img src="./imagens/logo.png" alt="logo Franklin Souza" class="logo" />
+    </div>
+
+    <div class="contatos"> <!-- os ícones estão comentados pois ainda não decidi a forma que os organizarei mas não descarte ia ideia de tê-los -->
+      <div>
+        <a target="_blank" href="https://github.com/Frankkson">
+          <!-- <img src="./imagens/GitHub.png" alt="logo do GitHub"/> -->
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="mailto:ffrancadesouza@gmail.com">
+          <!-- <img src="./imagens/mail_2.png" alt="ícone de e-mail"> -->
+          E-mail</a>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/franklin-matheus-fran%C3%A7a-de-souza-14934821b/">
+          <!-- <img src="./imagens/LinkedIn.png" alt="Logo do LinkedIn"/> -->
+          linkedIn</a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section class="container">
+
+      <div class="name">
+        <h1>Frank_ Souza</h1><br/>
+        <h5>Desenvolvedor Front-end</h5><br/>
+      </div>
+
+      <div onclick="displayabout()" id="arrow">
+        <i id="animation" class="fa-solid fa-sort-down"></i>
+      </div>
+      <br/>
+      <div style="display: none;" id="about">
+        <p>
+          Olá! Me chamo Franklin, tenho 23 anos. <br /><br />
+          Sou um estudante de licenciatura em química pela UFSC.<br /><br />
+          Me encontro na reta final do meu curso e busco me aprofundar
+          na área de programação(principalmente Front-end).
+          Me interesso muito pela área de desenvolvimento mobile,
+          atualmente aprofundando meus conhecimentos em React-Native.
+          Atualmente estou trabalhando em um aplicativo, projeto
+          pessoal, que une meus conhecimentos universitários e
+          contribui para meus estudos em front-end.
+        </p>
+      </div>
+      <br/><br/>
+      <div>
+        <p>Deixe seu contato!</p><br/>
+      </div>
+      <div class="form">
+        <form>
+          <input type="text" placeholder="seu melhor email :)">
+          <button>Manda!</button>
+        </form>
+        </div:>
+    </section>
+  </main>
+  <script>
+    function displayabout() {
+      let arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate')
+      let display = document.getElementById('about');
+      display.classList.toggle('active')
+    }
+  </script>
+</body>
+
+</html>
