@@ -19,9 +19,12 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content:space-around;
+        display: flex;
+    justify-content: space-around;
     padding: 10px;
+    border-bottom: double 10px aqua;
+        outline: solid 3px aqua;
+    margin-bottom: 40px;
 }
 
 .logo_div {
@@ -60,6 +63,8 @@ header div {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+
 
 
 }
@@ -84,7 +89,7 @@ header div img {
 
 #about {
     max-width: 600px;
-
+font-size: 18px;
     color: white;
     margin: 0 auto;
     text-align: justify;
@@ -137,6 +142,7 @@ Esse código está suspenso enquanto estiver investigando como conciliar as anim
 .form {
     width: 40%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .form input {
@@ -169,9 +175,34 @@ Esse código está suspenso enquanto estiver investigando como conciliar as anim
 
 /* responsividade - incompleto */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px){
     header {
         justify-content: flex-start;
+        
     }
-    
+
+    .container .name h1 {
+    font-size: 40px;
     }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about {
+        max-width: 80%;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #about {
+        max-width: 80%;
+        font-size: 14px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
