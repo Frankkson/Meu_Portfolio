@@ -1,208 +1,204 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'roboto', sans-serif;
-    color: white;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  color: white;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background: url(./imagens/BG.jpg) no-repeat center center fixed;
-    /* podemos agrupar os valores de uma propriedade em uma única linha */
-    background-size: cover;
-
+  background: url(./imagens/BG.jpg) no-repeat center center fixed;
+  /* podemos agrupar os valores de uma propriedade em uma única linha */
+  background-size: cover;
 }
 
 header {
-        display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    border-bottom: double 10px aqua;
-        outline: solid 3px aqua;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-bottom: double 10px aqua;
+  outline: solid 3px aqua;
+  margin-bottom: 40px;
 }
 
 .logo_div {
-    width: 10%;
-    margin: 0 auto;
+  width: 10%;
+  margin: 0 auto;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 
 .contatos {
-    margin: 0 auto;
-    display: flex;
-    width: 50%;
-    justify-content: space-evenly;
-    font-size: 18px;
+  margin: 0 auto;
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+  font-size: 18px;
 }
 
 .contatos a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+  display: flex;
+  align-items: center;
 }
 
-.contatos a:hover {
+.plataformas {
+  max-width: 20%;
+  margin: 0px 15px 0px 15px;
+}
 
-    color: lightgreen;
-    font-size: 22px;
-    transition: 200ms;
-
+.icones {
+  margin: 0px 20px;
 }
 
 header div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-
-
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header div img {
-    width: 20%;
+  width: 20%;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .container .name h1 {
-    font-size: 65px;
-    color: aquamarine;
+  font-size: 65px;
+  color: aquamarine;
 }
 
 .container .name h5 {
-    font-size: 20px;
-    color: aquamarine;
+  font-size: 20px;
+  color: aquamarine;
 }
 
 #about {
-    max-width: 600px;
-font-size: 18px;
-    color: white;
-    margin: 0 auto;
-    text-align: justify;
-    animation: fadeIn 2s;
+  max-width: 600px;
+  font-size: 18px;
+  color: white;
+  margin: 0 auto;
+  text-align: justify;
+  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pre_arrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #arrow {
-    font-size: 35px;
-    cursor: pointer;
-    transform: rotate(180deg);
-    /* animation: blink-animation 1s steps(5, start) infinite; */
-
+  font-size: 35px;
+  width: 5%;
+  cursor: pointer;
+  transform: rotate(180deg);
 }
 
-/* animação de 'piscar' ficou quebrada por conta da animação de rotação da seta. 
-Esse código está suspenso enquanto estiver investigando como conciliar as animações */
-
-/* @keyframes blink-animation {
-    to {
-        visibility: hidden; 
-    } 
-    
-
-} */
-
 #animation {
-    transition: 300ms;
+  transition: 350ms;
 }
 
 .rotate {
-    transform: rotate(180deg);
-
+  transform: rotate(180deg);
 }
 
 .active {
-    display: block !important;
-    transition: ease-in;
+  display: block !important;
+  transition: ease-in;
 }
 
 .form {
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 30px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .form input {
-    width: 40%;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 15px 0px 0px 15px;
+  width: 40%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .form button {
-    width: 15%;
-    color: black;
-    padding: 5px 10px;
-    font-weight: 600;
-    border: none;
-    border-radius: 0px 15px 15px 0px;
-    margin-left: -5px;
-    cursor: pointer;
-    /* animação de preenchimento*/
-    background: linear-gradient(to right, blue 50%, #fff 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 300ms ease-out;
+  width: 15%;
+  color: black;
+  padding: 5px 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  margin-left: -5px;
+  cursor: pointer;
+  /* animação de preenchimento*/
+  background: linear-gradient(to right, blue 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 300ms ease-out;
 }
 
 .form button:hover {
-    background-position: left bottom;
-    color: white;
+  background-position: left bottom;
+  color: white;
 }
 
 /* responsividade - incompleto */
 
-@media only screen and (max-width: 480px){
-    header {
-        justify-content: flex-start;
-        
-    }
+@media only screen and (max-width: 480px) {
+  header {
+    justify-content: flex-start;
+  }
 
-    .container .name h1 {
+  .container .name h1 {
     font-size: 40px;
-    }
+  }
 
-    .container .name h5 {
-        font-size: 15px;
-    }
+  .container .name h5 {
+    font-size: 15px;
+  }
 
-    #about {
-        max-width: 80%;
-        font-size: 14px;
-    }
-
+  #about {
+    max-width: 80%;
+    font-size: 14px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-    #about {
-        max-width: 80%;
-        font-size: 14px;
-    }
+@media only screen and (max-width: 900px) {
+  #about {
+    max-width: 80%;
+    font-size: 14px;
+  }
 
-    .form {
-        width: 100%;
-    }
+  .form {
+    width: 80%;
+  }
+
+  .contatos div a img {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .contatos a:hover {
+    color: lightgreen;
+    font-size: 22px;
+    transition: 200ms;
+  }
 }
